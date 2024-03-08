@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker Guide</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mood Tracker</h1>
+        <p>Your guide to navigating and using the application effectively.</p>
+    </header>
+    <main>
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <p>To begin using the Mood Tracker, simply invoke it with <strong>"Hey Alexa, open mood tracker"</strong>.</p>
+        </section>
+        <section id="logging-mood">
+            <h2>Logging Your Mood</h2>
+            <p>You can log your current mood by saying <em>"I am feeling happy"</em> or <em>"I feel stressed"</em>. The application supports various moods such as happy, sad, stressed, and excited.</p>
+        </section>
+        <section id="mood-intensity">
+            <h2>Mood Intensity</h2>
+            <p>Specify the intensity of your mood on a scale of 1 to 10 by saying <em>"It's a 5"</em> or <em>"About a 7"</em>.</p>
+        </section>
+        <section id="mood-details">
+            <h2>Mood Details</h2>
+            <p>Add more context to your mood log by providing details. For example, <em>"The reason is I got a new job"</em> or <em>"It's because I'm moving to a new city"</em>.</p>
+        </section>
+        <section id="reviewing-mood">
+            <h2>Reviewing Your Mood Log</h2>
+            <p>Request a summary of your mood over a specific timeframe or details for a particular day. Use commands like <em>"give me the summary for the last 2 weeks"</em> or <em>"what was my mood on Tuesday in week 3"</em>.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>User Interaction Scenarios</h2>
+        
+            <article id="scenario1">
+                <h3>Scenario 1: First-Time User Experience</h3>
+                <p><strong>Utterance:</strong> "Alexa, open Mood Tracker."</p>
+                <p><strong>Situation:</strong> The user is interacting with the skill for the first time.</p>
+                <p><strong>Response:</strong> "Welcome to Mood Tracker! I can help you track your emotional well-being over time."</p>
+                <p><strong>Prompt:</strong> "Before we start, would you like a quick overview of how I work, or would you prefer to dive right in and log your current mood?"</p>
+                <p>If the user asks for an overview:</p>
+                <p><strong>Response:</strong> "With Mood Tracker, you can log your mood, view past entries, and gain insights into your mood patterns. To log your mood, simply tell me how you're feeling."</p>
+            </article>
+        
+            <article id="scenario2">
+                <h3>Scenario 2: Daily Mood Logging</h3>
+                <p><strong>Utterance:</strong> "Alexa, I want to record my mood."</p>
+                <p><strong>Situation:</strong> The user wants to log their mood as part of their daily routine.</p>
+                <p><strong>Response:</strong> "I'm here to help with that. Tell me, how are you feeling today?"</p>
+                <p><strong>Prompt:</strong> "You can say 'I feel' followed by your mood."</p>
+                <p>After the user provides their mood:</p>
+                <p><strong>Response:</strong> "You said you're feeling [user's mood], is that right?"</p>
+                <p><strong>Prompt:</strong> "On a scale from 1 to 10, how intense is this feeling?"</p>
+                <p>Following the rating:</p>
+                <p><strong>Response:</strong> "Got it. I've logged that you're feeling [user's mood] with an intensity of [user's rating]."</p>
+                <p><strong>Prompt:</strong> "Would you like to add any details or is that everything for now?"</p>
+            </article>
+        
+            <article id="scenario3">
+                <h3>Scenario 3: Reviewing Past Entries</h3>
+                <p><strong>Utterance:</strong> "Alexa, what's my mood history for the last week?"</p>
+                <p><strong>Situation:</strong> The user wants to review their mood logs from the past week.</p>
+                <p><strong>Response:</strong> "Let's take a look at your mood history from this past week."</p>
+                <p><strong>Prompt:</strong> "You had [number of happy days] days where you felt happy and [number of sad days] days with some blues. Would you like me to go into more detail?"</p>
+                <p>If the user says yes:</p>
+                <p><strong>Response:</strong> "On Monday, you were feeling great, rating an 8 out of 10. Tuesday was a bit rougher, with a mood rating of 3. [Continue with the rest of the days]..."</p>
+                <p><strong>Prompt:</strong> "That's the recap of your week. Would you like to analyze any day in particular?"</p>
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Mood Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
